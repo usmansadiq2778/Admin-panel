@@ -1,0 +1,203 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans";
+  scroll-behavior: smooth;
+
+  /* color-scheme: dark; */
+  user-select: none;
+}
+.heading-custom-color {
+  color: #828fa3;
+}
+.heading-XL {
+  font-family: "Plus Jakarta Sans";
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+.board-bg {
+  background-color: #635fc7;
+  /* border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%; */
+}
+.heading-L {
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  font-weight: bold;
+  font-size: 18px;
+  line-height: auto;
+}
+
+.heading-M {
+  font-family: "Plus Jakarta Sans";
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.heading-S {
+  font-family: "Plus Jakarta Sans";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.4px;
+}
+.Body-L {
+  font-family: "Plus Jakarta Sans";
+  /* font-weight: 500; */
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0px;
+}
+.Body-M {
+  font-family: "Plus Jakarta Sans";
+  font-weight: bold;
+  font-size: 12px;
+  /* line-height: auto; */
+  letter-spacing: 0px;
+}
+.Board {
+  color: #828fa3;
+}
+.BoardLight {
+  color: #828fa3;
+}
+
+.Board:hover {
+  color: #635fc7;
+}
+
+.BoardLight:hover {
+  background-color: rgba(99, 95, 199, 0.25);
+}
+
+.BoardA {
+  background-color: #635fc7;
+  color: white;
+}
+.BoardIcon path {
+  fill: white;
+}
+.iconcross:hover path {
+  fill: rgba(255, 31, 31, 0.822) !important;
+}
+.hidehover:hover {
+  background-color: rgba(99, 95, 199, 0.24);
+}
+/* .BoardIcon:hover path {
+  fill: #635fc7;
+} */
+.Board:hover path {
+  fill: #635fc7;
+}
+.cureateBoard {
+  color: #635fc7;
+}
+.cureateBoard path {
+  fill: #635fc7;
+}
+
+.footer {
+  margin: 0px auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.sidebar-open {
+  display: none;
+  transition: width 0.3s ease; /* Add transitions for smooth animation */
+}
+
+/* Define styles for when the sidebar is closed */
+.sidebar-closed {
+  width: 0; /* Hide the sidebar */
+  overflow: hidden; /* Hide any content overflow */
+  transition: width 0.3s ease; /* Add transitions for smooth animation */
+}
+
+.LightGrey {
+  background-color: #f4f7fd;
+}
+.AddLightGrey:hover {
+  background-color: #f4f7fd;
+}
+.LightGrey:hover {
+  background-color: rgba(130, 143, 163, 0.2489);
+}
+.primaryHover:hover {
+  background-color: #a8a4ff;
+  color: white;
+}
+.AddbtnHover:hover {
+  background-color: #656299;
+}
+.BoardTaskDark {
+  height: calc(100vh - 97px);
+  background-color: #20212c;
+}
+.BoardTaskLight {
+  height: calc(100vh - 97px);
+  /* background-color: #20212c; */
+}
+.Addtaskdark {
+  background-color: #2b2c37;
+  /* color: #2b2c37; */
+}
+.inputLine {
+  border-color: #97979c83;
+}
+
+.Addnewcolumn {
+  /* background-color: #f4f7fd; */
+  background-color: #e4ebfa;
+  /* background-color: rgba(99, 95, 199, 0.1); */
+  /* background-color: white; */
+}
+.Addnewcolumn:hover {
+  /* background-color: #f4f7fd; */
+  background-color: rgba(99, 95, 199, 0.1);
+}
+
+.Todobg {
+  background-color: #49c4e5;
+}
+.bgdone {
+  background-color: #67e2ae;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar on Firefox */
+* {
+  scrollbar-width: none;
+}
+.Delete {
+  background-color: #ea5555;
+}
+.Delete:hover {
+  background-color: #ff9898;
+}
+.Cancel {
+  background-color: #f4f7fd;
+}
+.dialog-content {
+  max-height: 90vh; /* set the maximum height of the dialog content */
+  overflow-y: auto; /* enable vertical scrolling when content exceeds maxHeight */
+  /* height: 80vh; */
+}
+
+.Save:hover {
+  background-color: rgba(168, 164, 255, 0.2488);
+}
+.dialog-content-container {
+  max-height: 80vh; /* Adjust as needed */
+  overflow-y: auto;
+}
